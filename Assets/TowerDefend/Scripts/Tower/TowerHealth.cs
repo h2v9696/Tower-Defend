@@ -20,7 +20,7 @@ public class TowerHealth : SingletonMonoBehaviour<TowerHealth> {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        healthSlider.gameObject.transform.SetPositionAndRotation (healthSlider.gameObject.transform.position, Camera.main.gameObject.transform.rotation);
 	}
 
     public void TakeDamage(int damage) {
